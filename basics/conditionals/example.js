@@ -1,10 +1,24 @@
 
-let icecream = "chocolate";
-if (icecream === "chocolate")
-{
-    console.log("Yaaayy");
-}
-else
-{
-    console.log("NOoo")
-}
+a = 3 + 5
+console.log(a);
+
+a = 3 - 5
+console.log(a);
+
+a = '3' + '5'
+console.log(a);
+
+a = "hello" + "world";
+console.log(a);
+
+a = 3 == 5
+console.log(a);
+
+a = 3 != 5
+console.log(a);
+
+a = 3 !== 5
+console.log(a);
+
+a = !(3 != 5)
+console.log(a);
