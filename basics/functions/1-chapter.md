@@ -48,3 +48,40 @@ Functions are a way to package and reuse blocks of code. They help avoid repetit
 
    This helps manage the scope of variables; anything declared inside a function is usually only accessible within that function unless explicitly returned.
 
+
+
+An anonymous function in JavaScript is a function that does not have a name. It is often used when a function is only needed for a short period or as a parameter to another function, like in event handling. 
+
+Here's an example of a named function:
+
+```javascript
+function addNumbers(a, b) {
+  return a + b;
+}
+```
+
+And here's the equivalent anonymous function using the arrow function syntax:
+
+```javascript
+let addNumbers = function(a, b) {
+  return a + b;
+};
+```
+
+The arrow function version:
+
+```javascript
+let addNumbers = (a, b) => {
+  return a + b;
+};
+```
+
+In the context of event handling, anonymous functions are commonly used as callback functions, providing the code that should run when an event occurs. For example:
+
+```javascript
+document.querySelector("button").addEventListener("click", function() {
+  alert("Button clicked!");
+});
+```
+
+In this case, the function used as the second argument to `addEventListener` is anonymous because it doesn't have a specific name assigned to it. It's a concise way to define a function for a specific purpose without the need for a separate function declaration.
