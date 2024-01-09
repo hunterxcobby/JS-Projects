@@ -46,4 +46,3 @@
 2. **Symbols and BigInts:**
    - For symbols and BigInts, JavaScript intentionally restricts certain implicit type conversions to maintain consistency and prevent unexpected behaviors.
 
-Understanding dynamic and weak typing is crucial for writing robust and predictable JavaScript code.
