@@ -1,4 +1,3 @@
-Certainly, let's delve into the concept of functions:
 
 **Functions in JavaScript:**
 
