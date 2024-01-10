@@ -57,4 +57,3 @@ const myNumber = Math.random();
 - **Using functions**: Call them by name followed by parentheses: `functionName();`
 - **Built-in functions**: JavaScript provides many functions, and you've been using them already.
 
-Understanding functions is a key step in becoming a proficient coder, as they help keep your code organized and reusable.
