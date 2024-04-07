@@ -32,3 +32,5 @@ const circle = class Oval {
 
 const circle1 = new circle(29, 40);
 console.log(circle1.width)
+
+
