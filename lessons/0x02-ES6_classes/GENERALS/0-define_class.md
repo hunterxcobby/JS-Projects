@@ -94,3 +94,55 @@ console.log(Person.species()); // Output: "Homo sapiens"
 ```
 
 In summary, a class in JavaScript encapsulates data and behavior into a single entity. You can define a class with a constructor method to initialize instances, instance methods to define behaviors, static methods for utility functions, and fields to store data.
+
+
+
+The main difference between an instance method and a static method lies in how they are accessed and their relationship to class instances:
+
+1. **Instance Method**:
+   - An instance method operates on an instance of the class.
+   - It has access to the instance's properties and can modify them.
+   - It is invoked on instances of the class.
+   - Instance methods are defined without the `static` keyword inside the class body.
+
+2. **Static Method**:
+   - A static method is associated with the class itself rather than with instances of the class.
+   - It does not have access to instance properties and cannot modify them directly.
+   - It is invoked on the class itself, not on instances of the class.
+   - Static methods are defined with the `static` keyword inside the class body.
+
+### When to Use Which:
+
+1. **Instance Method**:
+   - Use instance methods when the logic you're implementing is specific to individual instances of the class.
+   - Instance methods often manipulate or interact with instance-specific data.
+   - For example, a method to calculate the area of a shape or to format a specific instance's data would be implemented as an instance method.
+
+2. **Static Method**:
+   - Use static methods when the logic you're implementing is independent of any particular instance of the class.
+   - Static methods are often used for utility functions or operations that do not require access to instance-specific data.
+   - For example, a method to validate input data, to perform calculations that don't depend on instance state, or to create instances of the class would be implemented as static methods.
+
+### Example:
+
+```javascript
+class MathUtils {
+  // Static method to calculate the square of a number
+  static square(x) {
+    return x * x;
+  }
+
+  // Instance method to calculate the area of a circle
+  static calculateCircleArea(radius) {
+    return Math.PI * this.square(radius);
+  }
+}
+
+// Using static method
+console.log(MathUtils.square(5)); // Output: 25
+
+// Using instance method
+console.log(MathUtils.calculateCircleArea(5)); // Output: 78.53981633974483
+```
+
+In this example, `square` is a static method of the `MathUtils` class, while `calculateCircleArea` is a static method that internally calls the `square` static method. They demonstrate how static methods can be used for general utility operations, while instance methods can be used for instance-specific logic.
