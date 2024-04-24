@@ -31,3 +31,21 @@ const result = `The sum of ${a} and ${b} is ${a + b}`;
 console.log(result); // The sum of 10 and 20 is 30
 
 
+// tagged templ(ates 
+
+function currency(strings, ...values) {
+    const result = [];
+    strings.forEach((str, i) => {
+      result.push(str);
+      if (i < values.length) {
+        result.push(values[i]);
+      }
+    });
+    return result.join('');
+}
+
+const amount = 100;
+const currencyType = 'USD';
+const message = currency`You have ${amount} ${currencyType}`;
+
+console.log(message); // You have 100 in USD
