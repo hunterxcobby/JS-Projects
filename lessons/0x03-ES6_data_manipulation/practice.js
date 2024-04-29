@@ -111,8 +111,10 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //     ageSum += ages[i];
 // }
 
-const ageSum = ages.reduce( function(total, age) {
-    return total + age;
-}, 0);
+// const ageSum = ages.reduce( function(total, age) {
+//     return total + age;
+// }, 0);
+
+const ageSum = ages.reduce((total, ages) => (total + ages), 0)
 
 console.log(ageSum);
