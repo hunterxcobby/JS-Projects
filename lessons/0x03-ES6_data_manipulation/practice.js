@@ -81,7 +81,7 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // console.log(ageSquare);
 
 
-// sort 
+// sort companies by start year 
 // const sortedCompanies = companies.sort(function(c1, c2){
 //     if(c1.start > c2.start)
 //     {
@@ -91,6 +91,12 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //     }
 // });
 
-const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1)); 
+// const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1)); 
 
-console.log(sortedCompanies);
+// console.log(sortedCompanies);
+
+// sort companies by age 
+
+const sortAges = ages.sort((a, b) => a - b );
+
+console.log(sortAges);
