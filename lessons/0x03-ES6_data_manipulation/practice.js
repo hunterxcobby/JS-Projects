@@ -64,18 +64,31 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // const testMap = companies.map( company => company.name)
 
-const testMap = companies.map(function(company) {
-    if (company.category === "Retail") {
-        return `This company ${company.name} was created at ${company.start}`
-    }
-    else{
-        return "company not found";
+// const testMap = companies.map(function(company) {
+//     if (company.category === "Retail") {
+//         return `This company ${company.name} was created at ${company.start}`
+//     }
+//     else{
+//         return "company not found";
+//     }
+// });
+
+// const ageSquare = ages.map(function (age) {
+//     return Math.sqrt(age)
+// }).map( age => age * 2)
+
+// // const agetimesTwo = ages.map( age => age * 2)
+// console.log(ageSquare);
+
+
+// sort 
+const sortedCompanies = companies.sort(function(c1, c2){
+    if(c1.start > c2.start)
+    {
+        return 1;
+    }else {
+        return -1;
     }
 });
 
-const ageSquare = ages.map(function (age) {
-    return Math.sqrt(age)
-}).map( age => age * 2)
-
-// const agetimesTwo = ages.map( age => age * 2)
-console.log(ageSquare);
+console.log(sortedCompanies);
