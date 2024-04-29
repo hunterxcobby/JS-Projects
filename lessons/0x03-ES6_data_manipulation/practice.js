@@ -73,4 +73,9 @@ const testMap = companies.map(function(company) {
     }
 });
 
-console.log(testMap);
+const ageSquare = ages.map(function (age) {
+    return Math.sqrt(age)
+}).map( age => age * 2)
+
+// const agetimesTwo = ages.map( age => age * 2)
+console.log(ageSquare);
