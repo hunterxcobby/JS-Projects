@@ -19,6 +19,20 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // }
 
 // for each 
-companies.forEach(function(company, index) {
-    console.log(company);
-});
+// companies.forEach(function(company, index) {
+//     console.log(company);
+//     console.log(company.name);
+// });
+
+
+// filter
+let oldAge = [];
+
+for (let i = 0; i < ages.length; i++)
+{
+    if(ages[i] >= 25) {
+       oldAge.push(ages[i]); 
+    }
+}
+
+console.log(oldAge);
