@@ -97,6 +97,22 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // sort companies by age 
 
-const sortAges = ages.sort((a, b) => a - b );
+// const sortAges = ages.sort((a, b) => a - b );
 
-console.log(sortAges);
+// console.log(sortAges);
+
+
+// reduce 
+// using a foor loop 
+// let ageSum = 0;
+
+// for (i =0 ; i < ages.length; i++) 
+// {
+//     ageSum += ages[i];
+// }
+
+const ageSum = ages.reduce( function(total, age) {
+    return total + age;
+}, 0);
+
+console.log(ageSum);
