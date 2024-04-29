@@ -18,6 +18,7 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //     console.log(companies[i]);
 // }
 
+
 // for each 
 // companies.forEach(function(company, index) {
 //     console.log(company);
@@ -25,14 +26,18 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // });
 
 
-// filter
-let oldAge = [];
+// for (let i = 0; i < ages.length; i++)
+// {
+//     if(ages[i] >= 25) {
+//        oldAge.push(ages[i]); 
+//     }
+// }
 
-for (let i = 0; i < ages.length; i++)
-{
-    if(ages[i] >= 25) {
-       oldAge.push(ages[i]); 
-    }
-}
 
+// // filter
+// const oldAge = ages.filter(function(age){
+//     if (age = 21){
+//         return true;
+//     }
+// });
 console.log(oldAge);
